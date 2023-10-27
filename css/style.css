@@ -1,0 +1,42 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN */
+.wrapper {
+    width: 100%;
+    height: 100vh;  
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    width: 600px;
+    margin: 0 auto;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    border: 1px solid black;
+    width: calc(100% / 10);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
