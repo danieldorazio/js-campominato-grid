@@ -1,3 +1,22 @@
+/**FUNZIONE difficult
+ * funzione che in base al valore della opzione di difficolta varia la grandezza della tabella 
+ * @param {valore} difficultOption
+ * @returns {number} grandezza della tabella
+ */
+function difficoult(difficultOption) {
+    let result = "";
+    if (difficultOption === "hard") {
+        result += 49;        
+    }else if (difficultOption === "medium") {
+        result += 81;
+    }else if (difficultOption === "easy") {
+        result += 100;
+    }
+    
+    return result;
+}
+
+
 /**FUNZIONE openString
  * fuznione che prende in interno il valore di celle che si voglio creare e apre in risposta l'array con gli elementi all'interno 
  * @param {numberInput} numberInput
@@ -16,6 +35,7 @@ function openString(numberInput) {
         grid.append(element); 
     }    
 }
+
 
 /**FUNZIONE gridGenerator
  * funzione ciclica che crea un elemento HTML X volte 
