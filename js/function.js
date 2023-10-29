@@ -29,7 +29,7 @@ function openString(numberInput) {
     for (let i = 0; i < numberCell.length; i++) {
         const element = numberCell[i];
         element.addEventListener("click", function () {
-            this.classList.add("bianco")
+            this.classList.add("azzurro")
             alert(this.textContent)  
         })
         grid.append(element); 
