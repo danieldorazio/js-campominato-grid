@@ -17,7 +17,6 @@ function openString(numberInput) {
     }    
 }
 
-
 /**FUNZIONE gridGenerator
  * funzione ciclica che crea un elemento HTML X volte 
  * @param {number} gridNumber numero di elementi che si voglio creare 
@@ -26,6 +25,17 @@ function openString(numberInput) {
 function gridElem(gridNumber) {
     const gridElem = document.createElement("div");
     gridElem.classList.add("cell");
+    if (difficultySelector.value === "hard") {
+        gridElem.classList.add("hard");
+        console.log("griglia piccola");
+        
+    } else if (difficultySelector.value === "medium") {
+        gridElem.classList.add("medium");
+        console.log("groglia media");
+    } else if (difficultySelector.value === "easy") {
+        gridElem.classList.add("easy");
+        console.log("groglia grande");
+    } 
     gridElem.innerHTML = gridNumber;
     return gridElem;    
 }
