@@ -1,3 +1,15 @@
+/**FUNZIONE cleaning
+ * funzione che toglie tutti gli elementi all'interno di una sezione tramite un ciclo while
+ * @param {element} section
+ * @returns {any}
+ */
+function cleaning (section) {
+    while(section.hasChildNodes()) {
+        section.removeChild(section.firstChild);
+    }
+}
+
+
 /**FUNZIONE difficult
  * funzione che in base al valore della opzione di difficolta varia la grandezza della tabella 
  * @param {valore} difficultOption
