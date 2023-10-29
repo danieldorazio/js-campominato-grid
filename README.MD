@@ -3,7 +3,8 @@
 **Consegna**
 
 L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
-Ogni cella ha un numero progressivo, da 1 a 100. Ci saranno quindi 10 caselle per ognuna delle 10 righe.
+Ogni cella ha un numero progressivo, da 1 a 100.
+Ci saranno quindi 10 caselle per ognuna delle 10 righe.
 Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
 
 **Bonus**
@@ -13,13 +14,21 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 - con difficoltà 2 => 81 caselle, con un numero compreso tra 1 e 81, divise in 9 caselle per 9 righe;
 - con difficoltà 3 => 49 caselle, con un numero compreso tra 1 e 49, divise in 7 caselle per 7 righe;
 
-**RISOLUZIONE**
+**SOLUZIONE**
 
-formattare html e css
+creare una selezione in html 
+    - se il valore dell'opzione è === "hard" inserire una griglia di 49 caselle (7x7)
+    - se il valore dell'opzione è === "medium" inserire una griglia di 81 caselle (9x9)
+    - se il valore dell'opzione è === "easy" inserire una griglia di 100 caselle (10x10)
 
-tutto viene rinchiuso al click del bottone 
+Al click del bottone play compare la griglia 
 
-crerae celle con numero progressivo da 1 a 100 in modo dinamico 
-creare celle con numero all'interno 
+CREARE la griglia con all'interno i numeri:
 
-al click di ogni cella la cella cambia colore ed emmete un allert con il numerodella cella 
+    - creare un ciclo for che mi ripete questa funzione X volte 
+            
+            - creare un elemento 
+            - creara un ciclo che mi crei un numero da inserire all'interno dell'elemento
+    
+        - Al click di ogni cella questa cambia colore e fa comparire un allert 
+
